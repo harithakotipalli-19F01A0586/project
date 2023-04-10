@@ -18,6 +18,7 @@ def homePage():
         dummy.append(i['glucose'])
         dummy.append(i['hemogloblin'])
         dummy.append(i['bodytemp'])
+        dummy.append(i['timestamp'])
         data.append(dummy)
 
     return render_template('index.html',dashboard_data=data,len=len(data))

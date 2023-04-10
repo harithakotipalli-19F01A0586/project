@@ -34,6 +34,7 @@ def notification(client,userdata,msg):
     k['timestamp']=datetime.now()
     c.insert_one(k)
     print(pulseRate,spo2,bpm,glucose,hemoglobin,bodytemp)
+    print('Data Stored to Flink Table')
 
 client.on_message=notification
 client.loop_forever()

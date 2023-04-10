@@ -2,7 +2,7 @@ import dataSource as KinesisDataStream
 import paho.mqtt.client as mqtt
 import time
 
-kinesisServer='broker.hivemq.com'
+kinesisServer='172.31.80.42'
 client=mqtt.Client()
 
 def send_to_kinesisCluster(data):

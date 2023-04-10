@@ -7,7 +7,7 @@ flinkobj=flinkTable('localhost',27017)
 db=flinkobj['flink']
 c=db['flink table']
 
-kinesisServer='broker.hivemq.com'
+kinesisServer='172.31.80.42'
 client=mqtt.Client()
 client.connect(kinesisServer,1883)
 print('Connected with Kinesis Server')

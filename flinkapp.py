@@ -16,7 +16,7 @@ def homePage():
         dummy.append(i['spo2'])
         dummy.append(i['bpm'])
         dummy.append(i['glucose'])
-        dummy.append(i['hemoglobin'])
+        dummy.append(i['hemogloblin'])
         dummy.append(i['bodytemp'])
         data.append(dummy)
 

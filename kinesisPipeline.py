@@ -6,7 +6,7 @@ kinesisServer='172.31.80.42'
 def send_to_kinesisCluster(data):
     client=mqtt.Client()
     client.connect(kinesisServer,1883)
-    client.publish('kinesisData',data)
+    client.publish('b17/data',data)
     print('Data Published Successfully')
 
 while True:
